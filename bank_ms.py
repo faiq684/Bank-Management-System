@@ -73,7 +73,7 @@ if login_or_signup_input == "2":
                 print(f"{username_input}, Your Account Balance is {account_balances[index]}")
             elif transaction_choice == "2":
                 transfer_input = input("Enter the account number of the account you want to transfer money to:")
-                transfer_amount = int(input("Enter the amount you want to transfer: "))
+                transfer_amount = int(float(input("Enter the amount you want to transfer: ")))
                 if transfer_amount > (account_balances[index]):
                  print("Insufficient Balance")
                 else:
